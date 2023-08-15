@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  nuxt:
+    build:
+      context: .
+    image: issac-3-fe-1-dev
+    container_name: issac-3-fe-1-dev
+    command: npm run dev
+    volumes:
+    - .:/app
+    - /app/node_modules
+    - ~/.ssh:/root/.ssh
+    ports:
+      - "3022:3000"
+      - "24678:24678"
+    env_file:
+      - .env
+    networks:
+    - nuxt-network
+networks:
+  nuxt-network:
+    driver: bridge

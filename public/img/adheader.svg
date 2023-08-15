@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="3270.47" height="132.47" viewBox="0 0 3270.47 132.47">
+    <defs>
+        <filter id="filter" x="-10.81" y="-10.09" width="3281.28" height="142.56" filterUnits="userSpaceOnUse">
+            <feOffset dy="8" input="SourceAlpha" />
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feFlood flood-opacity="0.36" />
+            <feComposite operator="in" in2="blur" />
+            <feComposite in="SourceGraphic" />
+        </filter>
+    </defs>
+    <path d="M3252.28,0H7.3V73.28H1500.39c28.26,19.91,75.72,33,129.52,33s101.27-13.06,129.53-33H3252.28Z" fill="#fff" filter="url(#filter)" />
+</svg>

@@ -1,0 +1,170 @@
+//https://stackoverflow.com/a/66930138
+@font-face {
+  font-family: "my-custom-font";
+  src: url("./fonts/museo_sans/MuseoSans_300.otf");
+}
+
+.v-application {
+  font-family: "my-custom-font" !important;
+  max-width: 100vw !important;
+
+  [class*="text-"] {
+    font-family: "my-custom-font" !important;
+  }
+}
+
+.v-breadcrumbs-item--link {
+  --v-disabled-opacity: 0.5;
+}
+
+.v-btn {
+  text-transform: capitalize !important;
+}
+
+p {
+  font-family: "my-custom-font" !important; ;
+}
+
+// .HomeCard:before {
+//   /* width: 1095px;
+//   height: 430px; */
+//   content: "";
+//   display: inline-block;
+//   width: 75%;
+//   height: 390px;
+//   background-image: url(img/ui/CompanyCard2.svg);
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   left: -100px;
+//   background-size: 100% 100%;
+// }
+
+//this is for the xs breakpoint
+@media (min-width: 360px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .HomeCard:before {
+    content: "";
+    display: inline-block;
+    width: 105%;
+    height: 329px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+// this is for the xs breakpoint
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 280px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  //this is for the sm breakpoint
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 103%;
+    height: 280px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+//this is for the  sm breakpoint
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 102%;
+    height: 260px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+//this is the  sm breakpoint
+@media (min-width: 900px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 102%;
+    height: 230px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+
+//this is for the md breakpoint
+@media (min-width: 960px) {
+  /* big landscape tablets, laptops, and desktops */
+  // width: 75%;
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 75%;
+    height: 380px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
+
+//this is for the large breakpoint
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .HomeCard:before {
+    /* width: 1095px;
+    height: 430px; */
+    content: "";
+    display: inline-block;
+    width: 75%;
+    height: 390px;
+    background-image: url(~/assets/img/ArthurDavid/CompanyCard2.svg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    left: -100px;
+    background-size: 100% 100%;
+  }
+}
