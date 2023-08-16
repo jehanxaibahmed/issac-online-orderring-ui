@@ -1,4 +1,3 @@
-import { FilterButtonsType } from "types/enabledFilterOptions";
 export default function () {
   //this composable is to handle the switches on the settings page
   const userPrefAlwaysShowNavigationDrawer = useState(
@@ -27,19 +26,11 @@ export default function () {
         ? Number(localStorage.getItem("productsDisplayedPerPage"))
         : undefined
   );
-  //unsure about resetting this state on signout. these arent to be used in unauthed areas (definetly not for arthur david as they dont have a landing screen just the sign in form) NO POINT IN RESETTING AS THESE ALL LOOK IN LOCAL STORAGE
-  const userPrefSortBy = useState<FilterButtonsType | undefined>(
-    "userPrefSortyBy",
-    () =>
-      localStorage.getItem("sortBy")
-        ? JSON.parse(localStorage.getItem("sortBy") + "") //+'' for TS
-        : undefined
-  );
+
   return {
     userPrefAlwaysShowNavigationDrawer,
     // enableExpandOnHoverBehaviour,
     userPrefProductsDisplayedPerPage,
-    userPrefSortBy,
     userPrefNavigationDrawerExpanded,
   };
 }

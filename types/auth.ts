@@ -1,4 +1,3 @@
-import { Customer } from "./allCustomers";
 
 export type UserSignInApiResponseType = {
   user: User;
@@ -16,7 +15,6 @@ export interface User {
   // pm_last_four: any;
   // trial_ends_at: any;
   // privacy_settings: PrivacySettings;
-  // customer_account: Customer;
   // distributor_account: any;
   // agent_account: any;
   // acl: Acl;
@@ -31,7 +29,6 @@ export interface User {
   created_at: string;
   updated_at: string;
   privacy_settings: PrivacySettings;
-  customer_account?: Customer;
   distributor_account: any;
   agent_account: any;
   acl: Acl;

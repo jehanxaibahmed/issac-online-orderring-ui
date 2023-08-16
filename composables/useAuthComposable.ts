@@ -9,7 +9,6 @@ export default function () {
   const { resetBannerOnSignOut } = useCompanyBanner();
   // const { resetConfigsOnSignOut } = useCompanyConfigs(); CONFIGS NEED TO BE FETCHED ON INSTANCE AS THEY ALSO WILL APPLY TO THE UNAUTHENTICATED USERS PAGES, NOT TO BE RESET ON SIGNOUT
   const { resetFAQOnSignOut } = useFAQ();
-  const { resetPaperworkDataOnSignOut } = usePaperwork();
   const { resetLayoutToPageStateOnSignout } = usePassStateFromLayoutToPage();
   const { resetPageToLayoutStateOnSignout } = usePassStateFromPageToLayout();
   const dialogShow = useLoadingDialog();
@@ -157,7 +156,6 @@ export default function () {
       resetRoutesOnSignOut();
       resetBannerOnSignOut();
       resetFAQOnSignOut();
-      resetPaperworkDataOnSignOut();
       resetLayoutToPageStateOnSignout();
       resetPageToLayoutStateOnSignout();
       userActionDisableButtons.value = false;

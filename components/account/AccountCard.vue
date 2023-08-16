@@ -70,28 +70,8 @@ defineProps({
         </VCardText>
       </VCol>
 
-      <VCol sm="9" cols="8" v-if="userData.customer_account">
-        <VCardText class="text-disabled px-0">
-          <!-- <VCol cols="9" class="text-disabled"> -->
-          {{ userData.customer_account.address_line_1 }}
-          <br />
-          {{ userData.customer_account.address_line_2 }}
-          <br />
-          {{ userData.customer_account.address_line_3 }}
-          <br />
-          {{ userData.customer_account.address_line_4 }},
-          {{ userData.customer_account.postcode }}
-        </VCardText>
-      </VCol>
-      <VCol sm="9" cols="8" v-else>
-        <VCardText class="text-disabled px-0"> AGENT ACCOUNT </VCardText></VCol
-      >
-      <VDivider class="border-opacity-50" />
-      <VCol sm="3" cols="4">
-        <VCardText class="font-weight-bold text-subtitle-2 px-0">
-          Email Address:
-        </VCardText>
-      </VCol>
+     
+     
 
       <VCol sm="9" cols="8">
         <VCardText class="text-disabled px-0">
@@ -106,14 +86,7 @@ defineProps({
         </VCardText>
       </VCol>
 
-      <VCol sm="9" cols="8" v-if="userData.customer_account">
-        <VCardText class="text-disabled px-0">
-          {{ userData.customer_account.telephone_no }}
-        </VCardText>
-      </VCol>
-      <VCol sm="9" cols="8" v-else>
-        <VCardText class="text-disabled px-0"> AGENT ACCOUNT </VCardText></VCol
-      >
+     
       <VDivider class="border-opacity-50" />
 
       <VRow>

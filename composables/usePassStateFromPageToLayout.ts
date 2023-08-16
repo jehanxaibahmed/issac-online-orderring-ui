@@ -1,15 +1,7 @@
-import {
-  FilterButtonsType,
-  FilterButtonsTypeArray,
-} from "types/enabledFilterOptions";
 
 export default function () {
-  // const watchThisForSeasonalPromotions = useState<
-  //   undefined | FilterButtonsType
-  // >("watchThisForSeasonalPromotions", () => undefined);
-
   const refArrayForPermanentFiltersSetFromOtherLeftNavBarOrAppBar = useState<
-    undefined | FilterButtonsType[]
+    undefined | []
   >(
     "refArrayForPermanentFiltersSetFromOtherLeftNavBarOrAppBar",
     () => undefined
@@ -27,7 +19,7 @@ export default function () {
   );
 
   const passClosedPermFilterToComponent = useState<
-    FilterButtonsType | undefined
+    [] | undefined
   >("passClosedPermFilterToComponent", () => undefined);
 
   const useThisForPagination = useState<number>(

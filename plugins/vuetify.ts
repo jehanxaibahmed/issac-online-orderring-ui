@@ -1,4 +1,3 @@
-import { ReducedToClear } from "../types/productFilters";
 // plugins/vuetify.js
 import { createVuetify, ThemeDefinition } from "vuetify";
 import * as components from "vuetify/components";

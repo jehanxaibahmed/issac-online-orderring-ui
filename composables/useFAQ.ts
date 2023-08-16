@@ -1,4 +1,3 @@
-import { Category } from "../types/productsGroupData";
 //typescript file converted from  JSON to typescript
 import { FaqTypesMainObject } from "types/faq";
 
