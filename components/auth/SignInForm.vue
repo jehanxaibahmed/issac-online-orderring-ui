@@ -1,21 +1,8 @@
 <script setup lang="ts">
-import type { Ref } from "vue";
 import { useUserStore } from '@/store/user';
+import { emailRules, passwordRules } from '@/global/validationsRules';
 
 const userActionDisableButtons = useUserActionDisableButtons();
-const { signInUser } = useAuthComposable();
-
-
-const emailRules = [
-  (v: string) => !!v || "E-mail is required",
-  (v: string) => /.+@.+\..+/.test(v) || "E-mail must be valid",
-]
-const passwordRules = [
-  (v: string) => !!v || "Password is required",
-  (v: string) => (v && v.length >= 4) || "Minimum of 4 Characters",
-];
-
-
 
 const UserStore = useUserStore();
 
@@ -39,7 +26,7 @@ const companyEnvBase = runtimeConfig.public;
 
 <template>
   <VForm @submit.prevent ref="form" v-model="login_screen.valid">
-    <h3 class="text-h4 font-weight-bold">Welcome!</h3>
+    <h3 class="text-h4 font-weight-bold">{{ $t('welcome') }}!</h3>
     <p class="text-subtitle-2 text-secondary mt-2 mb-4">
       Please enter your email and password to sign into the application.
     </p>

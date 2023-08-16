@@ -19,6 +19,7 @@
     "@kevinmarrec/nuxt-pwa": "^0.17.0",
     "@mdi/js": "^7.2.96",
     "@nuxt/devtools": "^0.8.0",
+    "@nuxtjs/i18n": "^8.0.0-rc.3",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@types/node": "^20.5.0",
     "nuxt": "^3.6.5",

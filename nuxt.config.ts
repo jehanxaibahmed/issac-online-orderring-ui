@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     },
   ],
     '@pinia-plugin-persistedstate/nuxt',
+    [
+      '@nuxtjs/i18n',
+      {
+        vueI18n: './lang/i18n.config.ts'
+      }
+    ]
 ],
 piniaPersistedstate: {
   cookieOptions: {
