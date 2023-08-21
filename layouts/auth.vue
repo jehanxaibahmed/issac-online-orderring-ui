@@ -9,31 +9,17 @@ const router = useRouter();
 const vuetify = useTheme();
 
 onMounted(async () => {
-  if (!allCompanyConfigs.value) {
-    await getCompanyConfigs();
-  }
-  if (!allCompanyConfigs.value) return;
-  //applying the 'custom' vuetify theme choices has to happen in a script setup
-  //primary
-  vuetify.themes.value.myCustomDarkTheme.colors.primary =
-    allCompanyConfigs.value.general.theme.primary_colour;
-  vuetify.themes.value.myCustomLightTheme.colors.primary =
-    allCompanyConfigs.value.general.theme.primary_colour;
+  vuetify.themes.value.myCustomDarkTheme.colors.primary = "#00447e";
+    vuetify.themes.value.myCustomLightTheme.colors.primary = "#00447e";
   //company primary
-  vuetify.themes.value.myCustomDarkTheme.colors.companyPrimary =
-    allCompanyConfigs.value.general.theme.company_primary_colour;
-  vuetify.themes.value.myCustomLightTheme.colors.companyPrimary =
-    allCompanyConfigs.value.general.theme.company_primary_colour;
+  vuetify.themes.value.myCustomDarkTheme.colors.companyPrimary = "#00447e";
+  vuetify.themes.value.myCustomLightTheme.colors.companyPrimary = "#00447e";
   //secondary
-  vuetify.themes.value.myCustomDarkTheme.colors.secondary =
-    allCompanyConfigs.value.general.theme.secondary_colour;
-  vuetify.themes.value.myCustomLightTheme.colors.secondary =
-    allCompanyConfigs.value.general.theme.secondary_colour;
+  vuetify.themes.value.myCustomDarkTheme.colors.secondary = "#333333";
+  vuetify.themes.value.myCustomLightTheme.colors.secondary = "#333333";
   //footer
-  vuetify.themes.value.myCustomDarkTheme.colors.footer =
-    allCompanyConfigs.value.general.theme.footer_colour;
-  vuetify.themes.value.myCustomLightTheme.colors.footer =
-    allCompanyConfigs.value.general.theme.footer_colour;
+  vuetify.themes.value.myCustomDarkTheme.colors.footer = "#333333";
+  vuetify.themes.value.myCustomLightTheme.colors.footer = "#333333";
   displayLoading.value = false;
 });
 </script>
